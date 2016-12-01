@@ -1,0 +1,40 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Fakework</title>
+	</head>
+
+	<body>
+
+		<h1>Fake movies app</h1>
+
+		Genre: <input type="text" id="genre-input">
+
+		<button onclick="movieController.searchByGenre()">Search</button>
+
+		<button onclick="movieController.suggestByGenre()">Suggest me!</button>
+
+
+		<div id="result"></div>
+
+
+
+		<!-- Include everything, just because this is a fake example -->
+
+		<script src="../backend/model/Movie.js"></script>
+		<script src="../backend/model/Director.js"></script>
+		<script src="../backend/data/Database.js"></script>
+		<script src="../backend/service/MovieService.js"></script>
+		<script src="../backend/api/MovieApi.js"></script>
+		<script src="fake-ajax.js"></script>
+		<script src="MovieController.js"></script>
+
+		<script>
+			// This is fake, web frameworks usually set up controllers automatically
+			let movieController = new MovieController();
+		</script>
+
+	</body>
+	
+</html>
