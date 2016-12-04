@@ -5,6 +5,7 @@ class MovieApi {
 		this.movieService = new MovieService();
 	}
 
+	/** Simulates that it gets a real HTTP request */
 	request(request) {
 
 		let response;

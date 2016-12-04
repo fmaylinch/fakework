@@ -11,7 +11,7 @@ class Database {
 			new Movie(1, 3, "Pulp fiction", "thriller", true),
 			new Movie(2, 1, "2001 space odissey", "sci-fi", true),
 			new Movie(3, 4, "Pi", "thriller", false),
-			new Movie(3, 2, "Mujeres al borde", "comedy", false),
+			new Movie(4, 2, "Mujeres al borde", "comedy", false),
 		];
 
 		this.directors = [

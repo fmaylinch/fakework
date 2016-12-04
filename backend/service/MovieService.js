@@ -12,6 +12,7 @@ class MovieService {
 	/** returns an array of movies of that genre */
 	findMoviesByGenre(genre) {
 
+		// Similar to a SQL: select * from movies where genre = genre
 		let query = { table: "movies", property: "genre", value: genre };
 		let movies = this.database.find(query);
 		return movies;
@@ -38,7 +39,6 @@ class MovieService {
 		for (let movie of movies) {
 			movieSet[movie.id] = movie;
 		}
-
 		movies = Object.values(movieSet);
 
 		return movies;
